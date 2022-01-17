@@ -8,7 +8,7 @@
     <link rel="icon" href="https://glitch.com/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Your new 11ty blog" />
-    <link rel="stylesheet" type="text/css" href="/public/style.css" />
+    <link rel="stylesheet" type="text/css" href="{{ '/public/style.css' | url }}" />
     {% seo "" %}
   </head>
   <body>
@@ -20,7 +20,7 @@
 
       <footer class="footer">
         <div class="links">
-          <a href="/">Home</a>
+          <a href="{{ '/' | url }}">Home</a>
           <span class="divider">|</span>
           <a href="/posts">Posts</a>
           <span class="divider">|</span>
