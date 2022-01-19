@@ -5,6 +5,7 @@
     {# This is the base template for the site–other templates extend this one #}
     
     <meta charset="utf-8" />
+    <link rel="icon" href="https://kyliepace.imgix.net/logo.png" />
     <link rel="icon" href="https://glitch.com/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Your new 11ty blog" />
@@ -20,11 +21,13 @@
 
       <footer class="footer">
         <div class="links">
-          <a href="{{ '/' | url }}">Home</a>
+          <a href="{{ '/' | url}}">🪴 Home</a>
           <span class="divider">|</span>
-          <a href="/posts">Posts</a>
+          <a href="{{ '/posts' | url }}">📝 Posts</a>
           <span class="divider">|</span>
-          <a href="/about">About</a>
+          <a href="{{ '/about' | url }}">🕶 About</a>
+          <span class="divider">|</span>
+          <a href="https://kyliepace.github.io/eleventy-blog">💻 tech blog</a>
         </div>
 
       </footer>
