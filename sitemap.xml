@@ -2,28 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>/posts/bookshelf/</loc>
+    <loc>./book-blog/posts/bookshelf/</loc>
     <lastmod>2022-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>/about/</loc>
+    <loc>./book-blog/about/</loc>
     <lastmod>2022-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>/</loc>
+    <loc>./book-blog/</loc>
     <lastmod>2022-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>/posts/</loc>
+    <loc>./book-blog/posts/</loc>
     <lastmod>2022-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
