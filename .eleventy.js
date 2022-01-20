@@ -32,9 +32,7 @@ module.exports = function(eleventyConfig) {
   still letting it have a proper glitch.me address via PROJECT_DOMAIN
   */
   const seo = require("./src/seo.json");
-  if (seo.url === "glitch-default") {
-    seo.url = `https://${process.env.PROJECT_DOMAIN}.glitch.me`;
-  }
+
   eleventyConfig.addPlugin(pluginSEO, seo);
 
   // Filters let you modify the content https://www.11ty.dev/docs/filters/
