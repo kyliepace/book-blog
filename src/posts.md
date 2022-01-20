@@ -4,4 +4,4 @@ layout: layouts/posts.njk
 
 ## Posts
 
-Write some details about your post lists. Or don't, and remove this!
+You get to buy a book for every post you read, you know.
