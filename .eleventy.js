@@ -47,6 +47,15 @@ module.exports = function(eleventyConfig) {
   /* Build the collection of posts to list in the site
      - Read the Next Steps post to learn how to extend this
   */
+
+    eleventyConfig.addCollection("topPosts", function(collection) {
+      const coll = collection
+        .getFilteredByTag("posts")
+        .slice(0, 5)
+  
+      return coll;
+    });
+  
   eleventyConfig.addCollection("posts", function(collection) {
     
     /* The posts collection includes all posts that list 'posts' in the front matter 'tags'

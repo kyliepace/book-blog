@@ -13,12 +13,26 @@ templateClass: tmpl-home
       <em>{{description}}</em>
     </p>  
     {# After the the content defined in index.md, list the blog posts in the collection #}
-    <ul>
-      {%- for post in collections.posts -%}
-        <li{% if page.url == post.url %} aria-current="page"{% endif %}><a href='{{ post.url | url }}'>{{ post.data.title }}</a></li>
+    <div class="feed">
+      {%- for post in collections.topPosts -%}
+      <div class="wrapper post">
+        <h2 class="postTitle">
+          <a href='{{ post.url | url }}'>{{post.data.title}}</a>
+        </h2>
+        <p>{{post.data.date | htmlDateString }}</p>
+        <p>
+          <em>{{post.data.description}}</em>
+        </p>
+        <div class="content text_small">
+          {{post.data.content | safe}}
+        </div>
+      </div>
       {%- endfor -%}
-      <li><a href="{{ '/posts' | url}}">View all posts</a></li>
-    </ul>
+    </div>
+    
+    <div>
+      <a href="{{ '/posts' | url}}">View all posts</a>
+    </div>
   </div>
 </div>
 
