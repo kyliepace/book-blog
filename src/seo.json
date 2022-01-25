@@ -1,6 +1,7 @@
 {
   "title": "Bookcombe",
-  "description": "A simple Eleventy blog, built with Glitch. Remix it to get your own.",
+  "description": "book and reading blog specializing in translated literature and Polish language & history",
   "url": "https://kyliepace.github.io/book-blog",
-  "image": ""
+  "image": "",
+  "author": "Kylie Pace"
 }

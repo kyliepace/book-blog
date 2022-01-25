@@ -49,6 +49,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addCollection("topPosts", function(collection) {
       const coll = collection
         .getFilteredByTag("posts")
+        .sort((a, b) => b.data.date - a.data.date)
         .slice(0, 5)
   
       return coll;
